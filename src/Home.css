@@ -1,0 +1,117 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&family=Lato:ital@1&display=swap');
+
+
+
+.home-body {
+    background-color: #F5F5F5;
+    color: black;
+    text-align: center;
+
+
+}
+.trying {
+    /* background-color: pink; */
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    margin-bottom: 300px;
+}
+.tenzHead{
+    font-family: 'Karla';
+    font-size: 3em;
+    filter: drop-shadow( 0px 3px 6px  rgba(0,0,0,0.4) );
+    margin-bottom: 20px;
+    
+
+}
+
+.tenzPara {
+    max-width: 80%;
+   margin-left: auto;
+   margin-right: auto ;
+   line-height: 1.5em;
+   font-family: 'Lato';
+   font-size: 0.8em;
+   margin-bottom: 2em;
+
+}
+
+.tenzPlay {
+    background: linear-gradient(158deg, rgba(117,133,255,1) 0%, rgba(104,226,255,1) 100%);
+
+    padding: 0.3em 1.7em;
+    text-decoration: none;
+    font-family: 'Karla';
+    color: white;
+    font-size: 1.3em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    
+    
+}
+
+.tenzPlay:hover{
+    background: linear-gradient(158deg, rgba(132,117,255,1) 0%, rgba(255,104,245,1) 100%);
+    box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.4);
+    /* transition-delay: 10s ; */
+
+}
+
+@media screen and (min-width: 476px) {
+    .tenzHead{
+        font-size: 5em;
+    }
+    .tenzPara {
+        font-size: 1em;
+    }
+    .tenzPlay {
+        font-size: 1.5em;
+    }
+
+}
+
+/* @media screen and (min-width: 768px) {
+    .tenzPara {
+        font-size: 1.2em;
+    }
+    
+} */
+
+@media screen and (min-width: 768px) {
+
+    .tenzHead{
+        font-size: 6em;
+        margin-bottom: 35px;
+    }
+
+    .tenzPara {
+        font-size: 1.5em;
+    }
+    .tenzPlay {
+        font-size: 1.9em;
+    }
+    main {
+        top: 50%;
+        background-color: pink;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .tenzHead{
+        font-size: 7em;
+    }
+    .tenzPara {
+        font-size: 1.8em;
+        max-width: 78%;
+        line-height: 1.7em;
+    }
+    
+    .tenzPlay {
+        font-size: 2em;
+        padding: 0.4em 1.8em;
+    }
+    
+
+}

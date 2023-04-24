@@ -1,0 +1,346 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&family=Lato:ital@1&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&family=Montserrat:wght@600&display=swap');
+
+
+@font-face {
+    font-family: 'digi-7';
+    src: url('../Fonts/digital-7.ttf') format('truetype');
+  }
+  
+
+
+.try-body{
+    background-color: #0B2434;
+    color: black;
+}
+
+
+main {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    width: 85%;
+    height: 65vh ;
+    position: relative;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,30%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.die {
+    background-color: white;
+    font-family: 'Karla';
+    width: 26px;
+    height: 26px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
+}
+
+.diedad {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(15px, 1fr)); */
+
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+    column-gap: 10px;
+    /* background-color: yellow; */
+    /* padding-left: 10%; */
+    width: 75%;
+   position: absolute;
+   top: 45%;
+}
+
+.roll-btn{
+    width: 5.5em;
+    height: 2.6em;
+    background-color: #5035FF;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    position: relative;
+    top: 70%;
+    cursor: pointer;
+    font-size: 0.9em;
+    /* font-family: 'Karla'; */
+    letter-spacing: 1px;
+    font-weight: bold;
+
+}
+
+.roll-btn:active{
+    box-shadow: inset 9px 5px  10px  rgba(0,0,0,0.5);
+
+}
+
+.confetti{
+    width: 210%;
+    height: 100%;
+}
+
+.tenName{
+    font-family: 'Karla';
+    font-size: 3em;
+    top: 15%;
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+    /* display: none; */
+    position: absolute;
+}
+
+.time-dad {
+    position: absolute;
+    width: 8em;
+    height: 3em;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 8%;
+    transform: translateX(-50%);
+
+}
+
+.time_container {
+    display: flex;
+    /* background-color: pink; */
+    font-family: 'digi-7';
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    font-weight: bold;
+    font-size: 2.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.best_score{
+    color: black;
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    font-size: 1em;
+
+}
+
+.best_score_child{
+    /* background: yellow; */
+    height: 2em;
+    width: 11em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.best_score_child > span{
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 5em;
+}
+
+
+
+/* for mobile mainly*/
+@media screen and (min-width: 476px){
+    .die{
+        width: 30px;
+        height: 30px;
+        font-size: 19px;
+
+    }
+
+    .diedad{
+        padding-left: 5%;
+    }
+
+    .roll-btn
+    {
+        font-size: 16px;
+        font-weight: bold;
+   
+   
+    }
+    .tenName{
+        font-size: 4em;
+    }
+}
+/* for mobile mainly*/
+@media screen and (min-width: 600px){
+    .die{
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+    .diedad{
+        padding-left: 6%;
+        gap: 23px;
+    }
+
+    
+   .confetti{
+      width: 150%;
+   }
+
+   .time-dad{
+    width: 10em;
+    height: 3.5em;
+   }
+
+   .time_container{
+    font-size: 2.8em;
+   }
+
+   .best_score{
+    font-size: 1.3em;
+   }
+}
+
+/* for mobile mainly*/
+@media screen and (min-width: 800px) {
+    .die{
+        width: 45px;
+        height: 43px;
+        font-size: 28px;
+    }
+    .diedad{
+        padding-left: 8%;
+        column-gap: 8px;
+        gap: 25px;
+    }
+    .roll-btn{
+        top: 75%;
+        width: 6em;
+        /* height: 3em; */
+        font-size: 1.2em;
+        letter-spacing: 1.6px;
+    }
+
+    .time-dad{
+        width: 15em;
+        height: 4.2em;
+    }
+
+    .time_container{
+        font-size: 3.5em;
+    }
+
+}
+
+/*mobile also included here*/
+
+@media screen and (min-width: 1100px) {
+
+    main{
+        width: 50%;
+        height: 67vh;
+    }
+    .die{
+        width: 47px;
+        height: 47px;
+        font-size: 30px;
+    }
+
+    .diedad{
+        gap: 30px;
+        column-gap: 11px;
+        padding-left: 5%;
+    }
+
+    .confetti{
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (min-width: 1500px){
+    .die{
+        width: 52px;
+        height: 52px;
+        font-size: 35px;
+    }
+    
+    .diedad{
+        gap: 35px;
+        column-gap: 11px;
+        padding-left: 7%;
+    }
+    .roll-btn{
+        top: 78%;
+        
+    }
+
+    .time-dad{
+        top: 6%;
+        width: 20em;
+        height: 4.7em;
+    }
+
+    .time_container{
+        font-size: 4em;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+
+    main {
+        width: 40%;
+        height: 70vh;
+    }
+
+}
+
+
+
+
+/* .best_score{
+    color: black;
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    font-size: 1.3em;
+
+}
+
+.best_score_child{
+    height: 2em;
+    width: 11em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.best_score_child > span{
+    background: pink;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 5em;
+} */
